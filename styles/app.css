@@ -32,6 +32,15 @@ body {
     line-height: 1.42;
 }
 
+a, a:active, a:focus, a:visited {
+    text-decoration: none;
+    color: var(--text);
+}
+
+a:hover {
+    text-decoration: underline
+}
+
 h1, h2 {
     font-size: 60px;
     margin: 20px 0;
