@@ -26,22 +26,25 @@ body {
     display: flex;
     flex-direction: column;
     font-family: "Open Sans", sans-serif;
-    font-size: 28px;
-
+    font-size: 14px;
     justify-content: center;
     line-height: 1.42;
 }
 
-a, a:active, a:focus, a:visited {
+a,
+a:active,
+a:focus,
+a:visited {
     text-decoration: none;
     color: var(--text);
 }
 
 a:hover {
-    text-decoration: underline
+    text-decoration: underline;
 }
 
-h1, h2 {
+h1,
+h2 {
     font-size: 60px;
     margin: 20px 0;
 }
@@ -100,7 +103,9 @@ h2::after {
  * Mobile
  */
 @media only screen and (max-width: 640px) {
-    h1, h2 {
+
+    h1,
+    h2 {
         font-size: 30px;
     }
 
