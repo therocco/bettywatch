@@ -1,0 +1,103 @@
+/**
+ * Betty Watch CSS
+ * @author: Rocco Augusto [@therocco]
+ */
+
+@import url("reset.css");
+
+:root {
+    --primary: #616161;
+    --light: #8e8e8e;
+    --dark: #373737;
+    --text: #fff;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    align-items: center;
+    background: var(--primary);
+    box-sizing: border-box;
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    font-size: 28px;
+
+    justify-content: center;
+    line-height: 1.42;
+}
+
+h1, h2 {
+    font-size: 60px;
+    margin: 20px 0;
+}
+
+h2::after {
+    content: "🤷";
+    display: inline-block;
+    margin-left: 15px;
+}
+
+/**
+ * Poster
+ */
+.poster {
+    border-radius: 213px;
+}
+
+/**
+ * Utility Classes
+ */
+
+.success {
+    --primary: #00c652;
+    --light: #9cff57;
+    --dark: #1faa00;
+    --text: #000;
+}
+
+.warning {
+    --primary: #ffd600;
+    --light: #ffff52;
+    --dark: #c7a500;
+    --text: #000;
+}
+
+.error {
+    --primary: #dd2c00;
+    --light: #ff6434;
+    --dark: #a30000;
+    --text: #000;
+}
+
+.success h2::after {
+    content: "🙌";
+}
+
+.warning h2::after {
+    content: "😬";
+}
+
+.error h2::after {
+    content: "😞";
+}
+
+/**
+ * Mobile
+ */
+@media only screen and (max-width: 640px) {
+    h1, h2 {
+        font-size: 30px;
+    }
+
+    .poster {
+        height: 100px;
+        width: auto;
+        border-radius: 100px;
+    }
+}
